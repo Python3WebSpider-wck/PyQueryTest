@@ -5,6 +5,7 @@ html = '''
  </div>
 '''
 from pyquery import PyQuery as pq
+
 doc = pq(html)
 wrap = doc('.wrap')
 print(wrap.text())

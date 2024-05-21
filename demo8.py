@@ -15,4 +15,4 @@ doc = pq(html)
 li = doc('li')
 print(li.html())
 print(li.text())
-print(type(li.text()))
+print(type(li.text()))  # <class 'str'>

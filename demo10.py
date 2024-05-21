@@ -5,11 +5,15 @@ html = '''
 '''
 from pyquery import PyQuery as pq
 doc = pq(html)
+
 li = doc('.item-0.active')
 print(li)
+
 li.attr('name', 'link')
 print(li)
+
 li.text('changed item')
 print(li)
+
 li.html('<span>changed item</span>')
 print(li)

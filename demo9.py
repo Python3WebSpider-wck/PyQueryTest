@@ -12,10 +12,13 @@ html = '''
  </div>
 '''
 from pyquery import PyQuery as pq
+
 doc = pq(html)
 li = doc('.item-0.active')
 print(li)
+
 li.removeClass('active')
 print(li)
+
 li.addClass('active')
 print(li)

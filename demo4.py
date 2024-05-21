@@ -13,17 +13,17 @@ html = '''
 from pyquery import PyQuery as pq
 doc = pq(html)
 items = doc('.list')
-print(type(items))
-print(items)
-lis = items.find('li')
-print(type(lis))
-print(lis)
+# print(type(items))
+# print(items)
+# lis = items.find('li')
+# print(type(lis))
+# print(lis)
 #
 #
 # lis = items.children()
 # print(type(lis))
 # print(lis)
 
-#
-# lis = items.children('.active')
-# print(lis)
+
+lis = items.children('.active')
+print(lis)

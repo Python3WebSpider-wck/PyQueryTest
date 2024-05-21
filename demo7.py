@@ -11,11 +11,12 @@ html = '''
      </div>
  </div>
 '''
-from pyquery import PyQuery as pq
-doc = pq(html)
-a = doc('.item-0.active a')
-print(a)
-print(a.text())
+# from pyquery import PyQuery as pq
+# doc = pq(html)
+# a = doc('.item-0.active a')
+# print(a)
+# print(a.text())
+
 
 from pyquery import PyQuery as pq
 doc = pq(html)

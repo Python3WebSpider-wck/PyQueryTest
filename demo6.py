@@ -13,15 +13,15 @@ html = '''
 '''
 from pyquery import PyQuery as pq
 doc = pq(html)
-a = doc('.item-0.active a')
-print(a, type(a))
-print(a.attr('href'))
 
-a = doc('a')
-print(a, type(a))
-print(a.attr('href'))
-print(a.attr.href)
+# a = doc('.item-0.active a')
+# print(a, type(a))
+# print(a.attr('href'))
 
+# a = doc('a')
+# print(a, type(a))
+# print(a.attr('href'))
+# print(a.attr.href)
 
 from pyquery import PyQuery as pq
 doc = pq(html)

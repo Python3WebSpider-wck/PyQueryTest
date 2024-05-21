@@ -11,46 +11,44 @@ html = '''
      </div>
  </div>
 '''
-from pyquery import PyQuery as pq
-doc = pq(html)
-items = doc('.list')
-container = items.parent()
-print(type(container))
-print(container)
+# from pyquery import PyQuery as pq
+# doc = pq(html)
+# items = doc('.list')
+# container = items.parent()
+# print(type(container))
+# print(container)
 
+# from pyquery import PyQuery as pq
+# doc = pq(html)
+# items = doc('.list')
+# parents = items.parents()
+# print(type(parents))
+# print(parents)
+#
+# parent = items.parents('.wrap')
+# print(parent)
+#
+# from pyquery import PyQuery as pq
+# doc = pq(html)
+# li = doc('.list .item-0.active')
+# print(li.siblings())
 
-from pyquery import PyQuery as pq
-doc = pq(html)
-items = doc('.list')
-parents = items.parents()
-print(type(parents))
-print(parents)
-
-
-parent = items.parents('.wrap')
-print(parent)
-
-from pyquery import PyQuery as pq
-doc = pq(html)
-li = doc('.list .item-0.active')
-print(li.siblings())
-
-
-from pyquery import PyQuery as pq
-doc = pq(html)
-li = doc('.list .item-0.active')
-print(li.siblings('.active'))
-
-from pyquery import PyQuery as pq
-doc = pq(html)
-li = doc('.item-0.active')
-print(li)
-print(str(li))
+# from pyquery import PyQuery as pq
+# doc = pq(html)
+# li = doc('.list .item-0.active')
+# print(li.siblings('.active'))
+#
+# from pyquery import PyQuery as pq
+# doc = pq(html)
+# li = doc('.item-0.active')
+# print(li)
+# print(str(li))
 
 
 from pyquery import PyQuery as pq
 doc = pq(html)
 lis = doc('li').items()
-print(type(lis))
+print(type(lis))    # <class 'generator'>
+# type(li)  pyquery.pyquery.PyQuery
 for li in lis:
     print(li, type(li))

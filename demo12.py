@@ -13,15 +13,23 @@ html = '''
 '''
 from pyquery import PyQuery as pq
 doc = pq(html)
-li = doc('li:first-child')
-print(li)
-li = doc('li:last-child')
-print(li)
-li = doc('li:nth-child(2)')
-print(li)
-li = doc('li:gt(2)')
-print(li)
-li = doc('li:nth-child(2n)')
-print(li)
+
+# li = doc('li:first-child')
+# print(li)
+
+# li = doc('li:last-child')
+# print(li)
+
+# li = doc('li:nth-child(2)')
+# print(li)
+
+# 这里不明白！gt看似应该 greater than的意思，即选择>2的li节点，即第二个li节点之后的所有li节点
+# 但结果是，选择的是第三个li节点之后的所有li节点
+# li = doc('li:gt(2)')
+# print(li)
+
+# li = doc('li:nth-child(2n)')
+# print(li)
+
 li = doc('li:contains(second)')
 print(li)
